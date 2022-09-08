@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "The AWS region to use to create resources."
-  default     = "us-central-1" # Frankfurt region
+  default     = "eu-central-1" # Frankfurt region
 }
 
 variable "bucket_prefix" {
@@ -21,7 +21,7 @@ variable "tags" {
 variable "versioning" {
     type        = bool
     description = "(Optional) A state of versioning."
-    default     = true
+    default     = false
 }
 
 variable "acl" {
