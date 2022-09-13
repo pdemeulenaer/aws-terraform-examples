@@ -29,3 +29,12 @@ variable "acl" {
     description = " Defaults to private "
     default     = "private"
 }
+
+
+# some dummy file to be uploaded
+variable "upload_source" {
+  type        = string
+  description = "The source file to upload to S3"
+  default     = "uploads/file.txt"
+  
+}
